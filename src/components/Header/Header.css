@@ -1,5 +1,6 @@
 .header {
     background-color: rgb(229, 255, 255);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.152);
 }
 .nav a {
     margin-right: 20px;

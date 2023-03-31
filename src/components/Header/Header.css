@@ -1,0 +1,16 @@
+.header {
+    background-color: rgb(229, 255, 255);
+}
+.nav a {
+    margin-right: 20px;
+    color: rgb(130, 130, 130);
+}
+
+.nav a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav img {
+    width: 35px;
+    height: 35px;
+}

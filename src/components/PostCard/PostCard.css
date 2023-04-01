@@ -1,0 +1,25 @@
+.cover {
+    height: 450px;
+}
+.author-image {
+    height: 60px;
+    width: 60px;
+}
+.read-time, .fa-regular, .date, .hashtag{
+    color: #606060;
+}
+.fa-regular {
+    transition: color 0.1s ease-in-out;
+}
+.fa-regular:hover {
+    color: black;
+}
+.mark {
+    text-decoration: underline;
+    color: #6047EC;
+    background-color: #ffffff;
+    border: 0;
+}
+.mark:hover {
+    color: #3a18ff;
+}

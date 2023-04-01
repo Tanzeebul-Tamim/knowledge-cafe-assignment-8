@@ -1,0 +1,7 @@
+.readTime {
+    border: 2px solid #b6a9ff;
+    padding: 20px 50px;
+    background-color: rgba(96, 71, 236, 0.1);
+    color: #6047EC;
+    position: fixed;
+}

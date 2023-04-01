@@ -3,7 +3,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header p-3 pt-4">
       <div className="d-flex align-items-center justify-content-between px-5 py-2">
         <div>
           <h1 className="h2 fw-bold title">Dev Diaries</h1>

@@ -1,31 +1,23 @@
 import React from "react";
+import './PostCard.css';
 
-const PostCard = ({cardData}) => { 
+const PostCard = ({cardData, handleReadTime}) => { 
   return (
-    <div className="mb-5">
-      <hr />
-      <br />
-      <img style={{ height: "450px", width: "820px" }} className="rounded-4" src={cardData.cover_image}/>
+    <div>
+      <img className="rounded-4 cover img-fluid w-100" src={cardData.cover_image}/>
       <div className="d-flex justify-content-between align-items-center mt-4">
         <div className="d-flex align-items-center gap-3">
-          <img
-            style={{ height: "60px", width: "60px" }}
-            className="rounded-circle"
-            src={cardData.author_image}
-            alt=""
-          />
+          <img className="rounded-circle author-image" src={cardData.author_image}/>
           <div className="name-date">
             <p className="h5 fw-bold">{cardData.author_name}</p>
-            <p style={{ color: "#606060" }} className="h6">
-              {cardData.post_date} ({cardData.days_ago} days ago)
-            </p>
+            <p className="h6 date">{cardData.post_date} ({cardData.days_ago} days ago)</p>
           </div>
         </div>
-        <div className="d-flex align-items-center gap-2 read-time">
-          <p style={{ color: "#606060" }} className="h5">
+        <div className="d-flex align-items-center gap-2">
+          <p className="h5 read-time">
             {cardData.read_time} min read
           </p>
-          <i style={{ color: "#606060" }} class="fa-regular fa-bookmark"></i>
+          <a href=""><i title="Bookmark this post" class="fa-regular fa-bookmark"></i></a>
         </div>
       </div>
       <div className="mt-3">
@@ -33,12 +25,13 @@ const PostCard = ({cardData}) => {
           {cardData.title}
         </h1>
       </div>
-      <p style={{ color: "#606060" }} className="h5 my-3">
+      <p className="h5 my-3 hashtag">
         {cardData.hashtags}
       </p>
-      <a style={{ textDecoration: "underline" }} className="h5 fw-bold" href="">
+      <button onClick={() => handleReadTime (cardData.read_time)} className="h5 fw-bold mark" href="">
         Mark as read
-      </a>
+      </button>
+      <hr className="mb-5"/>
     </div>
   );
 };

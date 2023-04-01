@@ -1,27 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import './Body.css';
+import React, { useEffect, useState } from "react";
+import PostCard from "../PostCard/PostCard";
+import "./Body.css";
 
 const Body = () => {
-    const [postCards, setPostCards] = useState ([]);
-    
-    useEffect (() => {
-        fetch ("data.json")
-        .then (res => res.json())
-        .then (data => setPostCards(data));
-    }, []);
+  const [postCards, setPostCards] = useState([]);
 
-    return (
-        <div>
-            <div className='posts-container'>
-                {
-                    postCards.map(postCard => console.log(postCard))
-                }
-            </div>
-            <div>
+  useEffect(() => {
+    fetch("data.json")
+      .then((res) => res.json())
+      .then((data) => setPostCards(data));
+  }, []);
 
-            </div>
-        </div>
-    );
+  return (
+    <div className="row">
+      <div className="posts-container col-md-8">
+        {
+            postCards.map(postCard => <PostCard cardData={postCard}></PostCard>)
+        }
+      </div>
+      <div className="col-md-4">
+        
+      </div>
+    </div>
+  );
 };
 
 export default Body;

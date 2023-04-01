@@ -2,51 +2,56 @@
   {
     "id": "64265557eb6062bade1ef8ad",
     "cover_image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "author_image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "author_image": "https://square-vn.com/app/dscms/assets/images/person-3.jpg?v=1653932875",
     "author_name": "Gardner Keith",
-    "post_date": "Mar 31 2023",
+    "post_date": "Mar 31",
+    "days_ago": 8,
     "read_time": 10,
-    "title": "10 Common Mistakes New Programmers Make and How to Avoid Them",
-    "has_tags": "#programming #beginners #mistakes #avoidance"
+    "title": "Common Mistakes New Programmers Make and How to Avoid Them",
+    "hashtags": "#programming #beginners #mistakes #avoidance"
   },
   {
     "id": "642655571f4bcd90e36a0d45",
-    "cover_image": "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
-    "author_image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "cover_image": "https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "author_image": "https://square-vn.com/app/dscms/assets/images/person-4.jpg?v=1653932875",
     "author_name": "Violet Conley",
-    "post_date": "Feb 13 2022",
+    "post_date": "Feb 13",
+    "days_ago": 3,
     "read_time": 8,
     "title": "Introduction to Data Structures and Algorithms for Programmers",
-    "has_tags": "#programming #datastructures #algorithms #beginners"
+    "hashtags": "#programming #datastructures #algorithms #beginners"
   },
   {
     "id": "642655574b944f75c9901b62",
     "cover_image": "https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "author_image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "author_image": "https://static01.nyt.com/images/2022/05/19/opinion/firstpersonPromo/firstpersonPromo-mediumSquareAt3X.jpg",
     "author_name": "Fry Marsh",
-    "post_date": "Jan 31 2023",
+    "post_date": "Jan 31",
+    "days_ago": 5,
     "read_time": 12,
     "title": "Best Practices for Debugging Your Code",
-    "has_tags": "#programming #debugging #bestpractices"
+    "hashtags": "#programming #debugging #bestpractices"
   },
   {
     "id": "64265557ade48172ede454b5",
-    "cover_image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    "author_image": "https://images.unsplash.com/photo-1639747280804-dd2d6b3d88ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "cover_image": "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "author_image": "https://images.squarespace-cdn.com/content/v1/559b2478e4b05d22b1e75b2d/1549568089409-SJ70E6DVG3XTE70232OL/Nesbit.jpg",
     "author_name": "Hurley Powers",
-    "post_date": "Mar 13 2023",
+    "post_date": "Mar 13",
+    "days_ago": 12,
     "read_time": 14,
     "title": "How to Write Secure Code and Avoid Common Security Vulnerabilities",
-    "has_tags": "#programming #security #securecode #vulnerabilities"
+    "hashtags": "#programming #security #securecode #vulnerabilities"
   },
   {
     "id": "64265557e39ecf1b5c461dfc",
-    "cover_image": "https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
-    "author_image": "https://images.unsplash.com/photo-1521252659862-eec69941b071?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "cover_image": "https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "author_image": "https://images.ctfassets.net/1wryd5vd9xez/6imn4PsoUBr6I9Hs8jWxk4/b28965e1afec63588266cf42ba5178ae/https___cdn-images-1.medium.com_max_2000_1_7hkI-ZKsglnbjxCRV1bMZA.png",
     "author_name": "Claudia Franklin",
-    "post_date": "Dec 17 2022",
+    "post_date": "Dec 17",
+    "days_ago": 7,
     "read_time": 11,
     "title": "The Future of Programming: Trends and Predictions",
-    "has_tags": "#programming #future #trends #predictions"
+    "hashtags": "#programming #future #trends #predictions"
   }
 ]

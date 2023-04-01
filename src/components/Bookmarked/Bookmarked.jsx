@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import Titles from '../Titles/Titles';
 import './Bookmarked.css'
 
-const Bookmarked = ({cards}) => {
-
-    const [bookmarkedBlogs, setBookmarkedBlogs] = useState([]);
-    useEffect (() => {
-        const markedBlogs = JSON.parse(localStorage.getItem("bookmark"));
-        setBookmarkedBlogs(markedBlogs);
-    }, [JSON.parse(localStorage.getItem("bookmark"))])
+const Bookmarked = ({arr}) => {
 
     return (
         <div className='card bookmarked'>
-            <h1 className="h5 fw-bold">Bookmarked Blogs: {bookmarkedBlogs ? bookmarkedBlogs.length : 0}</h1>
+            <h1 className="h5 fw-bold">Bookmarked Blogs: {arr.length}</h1>
             <div>
-               
+               {
+                arr.map(ar => <Titles ar={ar} ></Titles>)
+               }
             </div>
         </div>
     );

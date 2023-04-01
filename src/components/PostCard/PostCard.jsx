@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./PostCard.css";
 import { ToastContainer, toast } from "react-toastify";
 
-const PostCard = ({ cardData, handleReadTime }) => {
+const PostCard = ({ cardData, handleReadTime, blogTitle }) => {
 
   const handleBookmark = (id, title) => {
 
@@ -91,7 +91,7 @@ const PostCard = ({ cardData, handleReadTime }) => {
           <p className="h5 read-time">{cardData.read_time} min read</p>
           <button className="h5 mark" href="">
             <i
-              onClick={() => {handleBookmark(cardData.id, cardData.title); checkBookmark(cardData.id)}}
+              onClick={() => {handleBookmark(cardData.id, cardData.title); checkBookmark(cardData.id); blogTitle(cardData.title)}}
               title="Bookmark this post"
               class={bookmarked ? "fa-solid fa-bookmark" : "fa-regular fa-bookmark"}
             ></i>

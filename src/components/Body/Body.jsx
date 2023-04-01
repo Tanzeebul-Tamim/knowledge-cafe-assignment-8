@@ -4,7 +4,6 @@ import ReadTime from "../ReadTime/ReadTime";
 import "./Body.css";
 
 const Body = () => {
-
   const [postCards, setPostCards] = useState([]);
   const [readTime, setReadTime] = useState("");
 
@@ -13,13 +12,12 @@ const Body = () => {
     if (previousReadTime) {
       const sum = previousReadTime + duration;
       localStorage.setItem("readTime", sum);
-      setReadTime (sum);
-    }
-    else {
+      setReadTime(sum);
+    } else {
       localStorage.setItem("readTime", duration);
-      setReadTime (duration);
+      setReadTime(duration);
     }
-  }
+  };
 
   useEffect(() => {
     fetch("data.json")
@@ -27,15 +25,26 @@ const Body = () => {
       .then((data) => setPostCards(data));
   }, []);
 
+  const [arr, setArr] = useState([]);
+
+  const blogTitle = (title) => {
+    setArr((prevArr) => [...prevArr, title]);
+  };
+
   return (
     <div className="row gx-3">
       <div className="posts-container col-md-8">
-        {
-            postCards.map(postCard => <PostCard key={postCard.id} handleReadTime={handleReadTime} cardData={postCard}></PostCard>)
-        }
+        {postCards.map((postCard) => (
+          <PostCard
+            key={postCard.id}
+            blogTitle={blogTitle}
+            handleReadTime={handleReadTime}
+            cardData={postCard}
+          ></PostCard>
+        ))}
       </div>
       <div className="col-md-4">
-        <ReadTime readTime={readTime}></ReadTime>
+        <ReadTime arr={arr} readTime={readTime}></ReadTime>
       </div>
     </div>
   );

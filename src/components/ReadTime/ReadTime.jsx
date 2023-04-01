@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Bookmarked from "../Bookmarked/Bookmarked";
 import "./ReadTime.css";
 
-const ReadTime = ({ readTime, cards }) => {
+const ReadTime = ({ readTime, arr }) => {
   const [time, setTime] = useState(readTime);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const ReadTime = ({ readTime, cards }) => {
         </h1>
       </div>
       <div>
-        <Bookmarked cards={cards}></Bookmarked>
+        <Bookmarked arr={arr}></Bookmarked>
       </div>
     </div>
   );

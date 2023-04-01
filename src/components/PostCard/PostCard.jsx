@@ -2,6 +2,14 @@ import React from "react";
 import './PostCard.css';
 
 const PostCard = ({cardData, handleReadTime}) => { 
+
+  const handleBookmark = id => {
+    const previousBookmark = JSON.parse(localStorage.getItem("bookmark"));
+    let bookmark = [];
+    const postCard = {id};
+
+  }
+
   return (
     <div>
       <img className="rounded-4 cover img-fluid w-100" src={cardData.cover_image}/>
@@ -17,7 +25,7 @@ const PostCard = ({cardData, handleReadTime}) => {
           <p className="h5 read-time">
             {cardData.read_time} min read
           </p>
-          <a href=""><i title="Bookmark this post" class="fa-regular fa-bookmark"></i></a>
+          <button className="h5 mark" href=""><i onClick={() => handleBookmark (cardData.id)} title="Bookmark this post" class="fa-regular fa-bookmark"></i></button>
         </div>
       </div>
       <div className="mt-3">

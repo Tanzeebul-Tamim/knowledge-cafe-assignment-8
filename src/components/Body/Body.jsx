@@ -32,7 +32,7 @@ const Body = () => {
     <div className="row gx-3">
       <div className="posts-container col-md-8">
         {
-            postCards.map(postCard => <PostCard handleReadTime={handleReadTime} cardData={postCard}></PostCard>)
+            postCards.map(postCard => <PostCard key={postCard.id} handleReadTime={handleReadTime} cardData={postCard}></PostCard>)
         }
       </div>
       <div className="col-md-4">

@@ -27,7 +27,6 @@ const Body = () => {
       .then((data) => setPostCards(data));
   }, []);
 
-  
   return (
     <div className="row gx-3">
       <div className="posts-container col-md-8">

@@ -4,11 +4,11 @@ import { ToastContainer, toast } from "react-toastify";
 
 const PostCard = ({ cardData, handleReadTime }) => {
 
-  const handleBookmark = (id) => {
+  const handleBookmark = (id, title) => {
 
     const previousBookmark = JSON.parse(localStorage.getItem("bookmark"));
     let bookmark = [];
-    const postCard = { id };
+    const postCard = { id, title };
 
     if (previousBookmark) {
       const alreadyBookmarked = previousBookmark.find((card) => card.id === id);
@@ -91,7 +91,7 @@ const PostCard = ({ cardData, handleReadTime }) => {
           <p className="h5 read-time">{cardData.read_time} min read</p>
           <button className="h5 mark" href="">
             <i
-              onClick={() => {handleBookmark(cardData.id); checkBookmark(cardData.id)}}
+              onClick={() => {handleBookmark(cardData.id, cardData.title); checkBookmark(cardData.id)}}
               title="Bookmark this post"
               class={bookmarked ? "fa-solid fa-bookmark" : "fa-regular fa-bookmark"}
             ></i>

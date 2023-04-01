@@ -3,5 +3,7 @@
     padding: 20px 50px;
     background-color: rgba(96, 71, 236, 0.1);
     color: #6047EC;
+}
+.fixed {
     position: fixed;
 }

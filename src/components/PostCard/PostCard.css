@@ -1,25 +1,34 @@
 .cover {
-    height: 500px;
+  height: 500px;
 }
 .author-image {
-    height: 60px;
-    width: 60px;
+  height: 60px;
+  width: 60px;
 }
-.read-time, .fa-regular, .date, .hashtag{
-    color: #606060;
+.read-time,
+.fa-regular,
+.date,
+.hashtag {
+  color: #606060;
 }
 .fa-regular {
-    transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 .fa-regular:hover {
-    color: black;
+  color: black;
+}
+#mark {
+  text-decoration: underline;
+  color: #6047ec;
+  background-color: #ffffff;
+  border: 0;
 }
 .mark {
-    text-decoration: underline;
-    color: #6047EC;
-    background-color: #ffffff;
-    border: 0;
+  text-decoration: underline;
+  color: #606060;
+  background-color: #ffffff;
+  border: 0;
 }
-.mark:hover {
-    color: #3a18ff;
+#mark:hover {
+  color: #3a18ff;
 }

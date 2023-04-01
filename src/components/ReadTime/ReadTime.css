@@ -7,3 +7,9 @@
 .fixed {
     position: fixed;
 }
+
+@media only screen and (max-width: 577px) {
+    .fixed {
+        position: relative;
+    }
+  }

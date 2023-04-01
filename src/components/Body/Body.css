@@ -7,3 +7,10 @@
 body {
     font-family: 'Exo';
 }
+
+@media only screen and (max-width: 577px) {
+    .row {
+       margin: auto;
+       margin-top: 20px; 
+    }
+}

@@ -11,9 +11,9 @@ const ReadTime = ({ readTime, arr }) => {
   }, [readTime]);
 
   return (
-    <div className="fixed">
+    <div className="fixed me-3">
       <div>
-        <h1 className="h5 fw-bold readTime rounded-3 text-center">
+        <h1 className="h4 fw-bold readTime rounded-3 text-center">
           Spent time on reading : {time ? time : 0} min
         </h1>
       </div>

@@ -32,3 +32,8 @@
 #mark:hover {
   color: #3a18ff;
 }
+@media only screen and (max-width: 577px) {
+  .cover {
+    height: 100%;
+  }
+}

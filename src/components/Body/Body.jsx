@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PostCard from "../PostCard/PostCard";
+import Questions from "../Questions/Questions";
 import ReadTime from "../ReadTime/ReadTime";
 import "./Body.css";
 
@@ -32,20 +33,24 @@ const Body = () => {
   };
 
   return (
-    <div className="row gx-3">
-      <div className="posts-container col-md-8">
-        {postCards.map((postCard) => (
-          <PostCard
-            key={postCard.id}
-            blogTitle={blogTitle}
-            handleReadTime={handleReadTime}
-            cardData={postCard}
-          ></PostCard>
-        ))}
+    <div>
+      <div className="row gx-3">
+        <div className="posts-container col-lg-8">
+          {postCards.map((postCard) => (
+            <PostCard
+              key={postCard.id}
+              blogTitle={blogTitle}
+              handleReadTime={handleReadTime}
+              cardData={postCard}
+            ></PostCard>
+          ))}
+        </div>
+        <div className="col-lg-4">
+          <ReadTime arr={arr} readTime={readTime}></ReadTime>
+        </div>
       </div>
-      <div className="col-md-4">
-        <ReadTime arr={arr} readTime={readTime}></ReadTime>
-      </div>
+      <hr />
+      <Questions></Questions>
     </div>
   );
 };
